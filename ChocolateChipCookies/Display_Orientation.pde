@@ -1,10 +1,11 @@
+float Delcare;
+//
 void display() {
   println("\t\t\tWidth="+width, "\tHeight="+height); //key variables
   println("Display Monitor:", "\twidth="+displayWidth, "& height="+displayHeight);
   //
   String instruct="Bru, turn your phun";
-  if ( appWidth < appHeight ) { //Declare Display Orientation
-    
+  if ( appWidth < appHeight ) {
     println(instruct);
   } else {
     //Fit CANVAS into Display Monitor
