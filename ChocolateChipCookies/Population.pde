@@ -10,6 +10,10 @@ void population() {
   backgroundWidth = appWidth;
   backgroundHeight = appHeight;
   //
+  quitWidth = appWidth * 1/3;
+  quitHeight = appHeight * 1/10;
+  quitX = centerX - appWidth * 1/2; //Button Width = 1/3
+  quitY = centerY - 4*quitWidth;
 }//End Population
 //
 //ENd Population Subprogram
