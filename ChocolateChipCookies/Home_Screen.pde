@@ -1,5 +1,6 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
+float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 //Blue might change, starts at zero
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
@@ -15,9 +16,30 @@ void homeScreen() { //Exists in VOID DRAW
    - See Case Study
    - Note: must have one image with aspect ratio
    */
-   //"Quit Text"
-   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {} else {}
-   rect(quitX, quitY, quitWidth, quitHeight);
+//
+//Quit Button, move to Button Subprogram
+  if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
+    /*
+    fill(white); //Testing Only
+    rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
+    noFill(); //Testing Only
+    */
+    noStroke();
+    fill(white);
+    rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+    noFill();
+    stroke(1); //reset dedault
+    imageTintNightMode();
+    quitButtonImage(); //In Aspect Ratio
+  } else { 
+    noStroke();
+    fill(white);
+    rect( quitX, quitY, quitWidth, quitHeight );
+    noFill();
+    stroke(1); //reset dedault
+    quitButtonText();
+  }
+  //rect( quitX, quitY, quitWidth, quitHeight );
   //
 }//End homeScreen
 //
@@ -31,13 +53,7 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  //Control night mode, colour, with ternery operator
-  if ( nightMode==true ) {
-    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  } else {
-    tint(tintDayMode,tintDayModeOpacity);
-  }
-  //End nightmode control
+  imageTintNightMode();
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
 }//End backgroundImage

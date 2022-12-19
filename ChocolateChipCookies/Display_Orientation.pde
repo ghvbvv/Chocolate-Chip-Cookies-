@@ -1,4 +1,3 @@
-float Delcare;
 //
 void display() {
   println("\t\t\tWidth="+width, "\tHeight="+height); //key variables
