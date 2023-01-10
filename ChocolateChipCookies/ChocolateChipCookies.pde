@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false;
+Boolean OS_On=true, splashScreenStart=false;
 Boolean nightMode=false; //Bonus #1: populate with sytem clock
 //Ultimate Bonus, Gr 11: use API-sunrise for system clock start, API-sunset for system clock end
 //Hint: https://processing.org/reference/hour_.html
@@ -11,7 +11,7 @@ color resetDefaultInk=#FFFFFF, white=#FFFFFF, purple=#FF00FF;
  */
 //
 void setup() {
-  size(600, 400);
+  size(800, 600);
   //fullScreen(); //displayWidth, displayHeight
   appWidth = width;
   appHeight = height;
@@ -26,7 +26,7 @@ void setup() {
 //
 void draw() {
   //Assignemnt #2: OS Level Mouse CLick and Splash Screen
-  if ( OS_On==true && splashScreenStart==false ) splashScreen(); //OS Level MOUSE Click
+  if ( OS_On==false && splashScreenStart==true ) splashScreen(); //OS Level MOUSE Click
   if ( splashScreenStart==true ) homeScreen();
   println(splashScreenStart);
   //

@@ -1,4 +1,3 @@
-//
 void display() {
   println("\t\t\tWidth="+width, "\tHeight="+height); //key variables
   println("Display Monitor:", "\twidth="+displayWidth, "& height="+displayHeight);

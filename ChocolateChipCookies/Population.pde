@@ -10,10 +10,10 @@ void population() {
   backgroundWidth = appWidth;
   backgroundHeight = appHeight;
   //
-  quitWidth = appWidth * 1/9; //Origonal 1/3, debugging to adjust
-  quitHeight = appHeight * 1/10;
+  quitWidth = appWidth * 1/10; //Origonal 1/3, debugging to adjust
+  quitHeight = appHeight * 1/14;
   quitX = centerX - quitWidth * 1/2;
-  quitY = centerY - 4*quitHeight ;
+  quitY = centerY - 2*quitHeight ;
   //
   quitButtonImageRectX = quitX;
   quitButtonImageRectY = quitY;
