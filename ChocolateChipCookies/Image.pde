@@ -1,4 +1,4 @@
-PImage backgroundImage, quitButtonImage;
+PImage backgroundImage, quitButtonImage, startButtonImage;
 //
 void imageSetup() {//Image Population
   backgroundImage=loadImage("../Images/snow.jpg");

@@ -36,7 +36,6 @@ void quitButtonText() {
 }//End spaceBarText
 //
 void startButtonText() {
-  //rect( quitX, quitY, quitWidth, quitHeight );
   color ink = (  nightMode==true  ) ? #7D7D28 : purple ; //Note: hexidecimal example, only exists here
   fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference

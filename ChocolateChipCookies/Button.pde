@@ -1,7 +1,4 @@
-float startX, startY, startWidth, startHeight;
-//
-void splashScreen() {
-   //rect(startX, startY, startWidth, startHeight);
+void quitButton() {
     if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
     noStroke();
     fill(white);
@@ -17,11 +14,7 @@ void splashScreen() {
     noFill();
     stroke(1); //reset dedault
     quitButtonText();
-  }
-   //
-   //background(255); //testing only, must have rect() as screen for background image
-   backgroundWhiteScreen();
-   spaceBarText();
-}//End splashScreen
+}
+}//End quitButton
 //
-//End Splash Screen Subprogram
+//End Button subprogram

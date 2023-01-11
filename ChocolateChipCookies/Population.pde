@@ -20,6 +20,10 @@ void population() {
   quitButtonImageRectWidth = quitWidth * 5/6; //Origonal needs debugging to adjust
   quitButtonImageRectHeight = quitHeight;
   //
+  startButtonImageRectX = startX;
+  startButtonImageRectY = startY;
+  startButtonImageRectWidth = startWidth * 5/6;
+  startButtonImageRectHeight = startHeight;
 }//End Population
 //
 //ENd Population Subprogram
