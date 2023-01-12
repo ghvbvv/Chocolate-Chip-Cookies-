@@ -35,7 +35,7 @@ void backgroundWhiteScreen() {
 void backgroundImage() {
   backgroundWhiteScreen();
   imageTintNightMode();
-  image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+  image(backgroundImage1, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
 }//End backgroundImage
 //
