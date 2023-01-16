@@ -80,8 +80,13 @@ void startButtonImage() {
     imageWidthRatio = smallerDimension / largerDimension;
     startButtonImageWidth_calculated = imageWidthRatio * startButtonImageRectWidth;
     //
+    float centerX=appWidth*1/2;
+    startButtonImageRectX = centerX - startButtonImageWidth_Adjusted*1/2;
+    imageTintNightMode();
+    image ( startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Adjusted);
+  } else {
     
-  } else {}
+  }
   
 }
 //End Image Subprogram

@@ -8,6 +8,7 @@ void splashScreen() {
      noFill();
      stroke(1);
    }
+   else {}
    //
    //background(255); //testing only, must have rect() as screen for background image
    backgroundWhiteScreen();
