@@ -29,6 +29,7 @@ void draw() {
   if ( OS_On==false && splashScreenStart==true ) splashScreen(); //OS Level MOUSE Click
   if ( splashScreenStart==true ) homeScreen();
   println(splashScreenStart);
+  if ( OS_On==true && splashScreenStart==false ) startButton();
   //
 }//End draw
 //

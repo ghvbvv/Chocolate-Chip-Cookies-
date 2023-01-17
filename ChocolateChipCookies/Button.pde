@@ -16,5 +16,25 @@ void quitButton() {
     quitButtonText();
 }
 }//End quitButton
+void startButton() {
+     if ( mouseX<=startX && mouseX>=startX-startWidth && mouseY>=startY && mouseY<=startY-startWidth) {
+     noStroke();
+     fill(white);
+     rect( startButtonImageRectX, startButtonImageRectY, startButtonImageRectWidth, startButtonImageRectHeight);
+     noFill();
+     stroke(1);
+     imageTintNightMode();
+     startButtonImage();
+   }
+   else {
+     noStroke();
+     fill(white);
+     rect( startX, startY, startWidth, startHeight );
+     noFill();
+     stroke(1);
+     spaceBarText();
+   }
+}//End startButton
+   
 //
 //End Button subprogram

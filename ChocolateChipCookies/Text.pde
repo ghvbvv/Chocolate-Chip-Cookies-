@@ -35,15 +35,4 @@ void quitButtonText() {
   noFill();
 }//End spaceBarText
 //
-void startButtonText() {
-  color ink = (  nightMode==true  ) ? #7D7D28 : purple ; //Note: hexidecimal example, only exists here
-  fill(ink); //Ink, hexidecimal copied from Color Selector
-  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
-  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 33; //Change the number until it fits
-  textFont(font, size); 
-  text( startX, startY, startWidth, startHeight );
-  noFill();
-}//End startButtonText
-//
 //End Text Subprogram

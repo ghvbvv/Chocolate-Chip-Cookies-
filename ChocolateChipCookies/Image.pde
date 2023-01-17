@@ -77,16 +77,26 @@ void startButtonImage() {
     smallerDimension=startButtonImageHeight;
     //
     startButtonImageWidth_Adjusted = startButtonImageRectWidth;
-    imageWidthRatio = smallerDimension / largerDimension;
-    startButtonImageWidth_calculated = imageWidthRatio * startButtonImageRectWidth;
+    imageHeightRatio = smallerDimension / largerDimension;
+    startButtonImageHeight_Calculated = imageHeightRatio * startButtonImageRectWidth;
     //
     float centerX=appWidth*1/2;
     startButtonImageRectX = centerX - startButtonImageWidth_Adjusted*1/2;
     imageTintNightMode();
     image ( startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Adjusted);
   } else {
-    
+    largerDimension = startButtonImageHeight;
+    smallerDimension = startButtonImageWidth;
+    //
+    startButtonImageHeight_Adjusted = startButtonImageRectHeight;
+    imageWidthRatio = smallerDimension / largerDimension;
+    startButtonImageWidth_calculated = imageWidthRatio * startButtonImageRectHeight;
+    //
+    float centerX=appWidth*1/2;
+    startButtonImageRectHeight = centerX - startButtonImageWidth_calculated * 1/2;
+    imageTintNightMode();
+    image ( startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Calculated);
   }
-  
-}
+}//End StartButtonImage
+
 //End Image Subprogram
